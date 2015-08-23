@@ -1,0 +1,12 @@
+
+<h1>$word.getInputWord():</h1>
+
+<ul>
+
+#foreach ($definition in $word.getDefinitions())
+  <li>$definition.getWordDefinition()</li>
+#end
+
+</ul>
+
+<a href="/">Done adding definitions; go home!</a>

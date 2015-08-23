@@ -1,0 +1,19 @@
+<h1>Add definitions to $word.getInputWord():</h1>
+
+#foreach ($definition in $word.getDefinitions())
+  <li>$definition.getWordDefinition()</li>
+#end
+
+<form action="/savedefinition" method="post">
+  <input id="wordId" name="wordId" type="hidden" value="$word.getId()">
+
+<div class="form-group">
+  <label for="worddefinition">First definition</label>
+  <input id="worddefinition" name="worddefinition" type="text" class="form-control">
+</div>
+
+  <button type="submit" class="btn btn-default">Save</button>
+
+</form>
+
+<a href="/">Done adding definitions; go home!</a>

@@ -1,0 +1,10 @@
+<!-- url "/" --> 
+
+<h1>My Dictionary</h1>
+
+<a href="/words/new">Add a New Word</a>
+
+#foreach($word in $bobbs)
+ <h3><a href="/words/$word.getId()">$word.getInputWord()</a></h3>
+ 
+#end
